@@ -25,7 +25,17 @@ public class Tamagochi
 
     public void Tick()
     {
-        
+        _Hunger ++; //jag tänker att hunger ökar med 1 varje tick
+        _Boredom += 2;// iställer att boredom ökar med 1 varje gång ökar den med 2 istället varje tick för att göra det svårare
+
+        if(_Boredom <= 10 && _Hunger <= 10)
+        {
+            _isAlive = true;
+        }
+        else
+        {
+            _isAlive = false;   
+        }
     }
 
     public void PrintStat()
