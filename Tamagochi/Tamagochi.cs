@@ -84,3 +84,4 @@ public class Tamagochi
         _Boredom -=3; //samma tanke här som på att sänka hunger men här efter varje tick och om man väljer att sänka boredom så minskar den med 2 efter varje tick.
     }
 }
+
