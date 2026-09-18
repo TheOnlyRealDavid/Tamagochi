@@ -16,12 +16,12 @@ public class Tamagochi
 
         if(_Hunger <= -5)
         {
-            Console.WriteLine("your Tamogashi dies because of over eating");
+            Console.WriteLine($"{Name} dies because of over eating");
             _isAlive = false;
         }
         else if(_Hunger < 0)
         {
-            Console.WriteLine($"You over feed your Tamagochi, stop before it affects your tamogochis health");
+            Console.WriteLine($"You over feed {Name}, stop before it affects your tamogochis health");
         }
 
         Console.ReadLine();
@@ -30,7 +30,9 @@ public class Tamagochi
 
     public void Hi()
     {
-        
+        int ChoiceWord = Random.Shared.Next(Words.Count);
+        Console.WriteLine($"{Name} says {Words[ChoiceWord]}");
+        ReduceBoredom();
     }
 
     public void Teach(string Word)
@@ -63,12 +65,12 @@ public class Tamagochi
 
         if(_isAlive == true)
         {
-            Console.WriteLine("Your Tamogochi is alive and well");
+            Console.WriteLine($"{Name} is alive and well");
         }
 
         else if (_isAlive == false)
         {
-            Console.WriteLine("Your Tamagochi died because of your hands");
+            Console.WriteLine($"{Name} died because of your hands");
         }
 
         Console.ReadLine();
