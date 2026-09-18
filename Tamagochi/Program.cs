@@ -22,10 +22,10 @@ while(MyTama.GetAlive() == true)
   
   if(choice == "1")
   {
-    
-  }
-
-  else if (choice == "2")
+    Console.WriteLine("What word?");
+    string NewWord = Console.ReadLine();
+    MyTama.Teach(NewWord);
+  }  else if (choice == "2")
   {
     MyTama.Hi();
   }
