@@ -35,7 +35,9 @@ public class Tamagochi
 
     public void Teach(string Word)
     {
-        
+        Console.WriteLine($"{Name} learns: {Word}");
+        Words.Add(Word);
+        ReduceBoredom();
     }
 
     public void Tick()

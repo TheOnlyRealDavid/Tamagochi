@@ -15,15 +15,13 @@ int.TryParse(choice, out int TheChoice);
 
 if(TheChoice == 1)
 {
-    MyTama.Feed();
+  MyTama.Feed();
 }
 
 else if(TheChoice == 2)
 {
   break;
 }
-
-MyTama.PrintStat();  
 }
 
 
