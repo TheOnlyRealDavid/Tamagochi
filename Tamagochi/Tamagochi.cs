@@ -5,7 +5,7 @@ public class Tamagochi
 {
     private int _Hunger;
     private int _Boredom;
-    private List<string> Words;
+    private List<string> Words = new List<string>() {"Hewwo"};
     private bool _isAlive = true;
     public string Name;
 
